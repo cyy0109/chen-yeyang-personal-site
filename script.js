@@ -1,14 +1,6 @@
-const CONTACT_EMAIL = "948302648@qq.com";
-
 const PROJECT_LINKS = {
   qunxiang: "https://qunxiangmap-egfyjqp6.manus.space/",
 };
-
-const emailLink = document.querySelector("#contact-email");
-if (emailLink) {
-  emailLink.href = `mailto:${CONTACT_EMAIL}`;
-  emailLink.querySelector("strong").textContent = CONTACT_EMAIL;
-}
 
 document.querySelectorAll("[data-project-link]").forEach((link) => {
   const projectKey = link.dataset.projectLink;
